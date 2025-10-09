@@ -179,8 +179,8 @@ class User:
         self.first_name = first_name
         self.last_name = last_name
         self.email = email
-    def send_email(self,reciever,message):
-        print(f"{self.email} to {reciever}: {message}") 
+    def send_email(self,receiver,message):
+        print(f"{self.email} to {receiver}: {message}") 
 
 class Teacher(User):
     def __init__(self, first_name, last_name, email):
@@ -226,8 +226,8 @@ class User:
         self.email = email
         User.add_name_to_all(first_name, last_name)
 
-    def send_email(self,reciever,message):
-        print(f"{self.email} to {reciever}: {message}") 
+    def send_email(self,receiver,message):
+        print(f"{self.email} to {receiver}: {message}") 
 
     @classmethod
     def add_name_to_all(cls,first,last):
